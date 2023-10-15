@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 
 namespace Core.entities
 {
-    public class TipoNotificacion: BaseEntity
+    public class SubModulos:BaseEntity
     {
-        public string ? NombreTipo {get; set;}
+        public string ? nombreSubmodulo {get; set;}
         public DateTime FechaCreacion {get; set;}
+
         public DateTime FechaModificacion {get; set;}
-        public ICollection<ModuloNotificaciones> ModuloNotificaciones {get; set;}
-        public ICollection<BlockChain> BlockChains {get; set;}
+        public ICollection<MaestrovsSubmodulos> MaestrovsSubmodulos {get; set;}
+        
     }
 }

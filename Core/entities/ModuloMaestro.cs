@@ -1,18 +1,20 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Core.entities
 {
-    public class Radicados: BaseEntity
+    public class ModuloMaestro:BaseEntity
     {
+        public string ? nombreModulo {get; set;}
+
         public DateTime FechaCreacion {get; set;}
 
-        
         public DateTime FechaModificacion {get; set;}
 
-        public ICollection<ModuloNotificaciones> ModuloNotificaciones {get; set;}
+        public ICollection<RolvsMaestro> RolvsMaestros {get; set;}
+
+        public ICollection<MaestrovsSubmodulos> MaestrovsSubmodulos {get; set;}
     }
 }

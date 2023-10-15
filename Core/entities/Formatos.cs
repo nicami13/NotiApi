@@ -10,6 +10,6 @@ namespace Core.entities
         public string ? NombreFormato {get; set;}
         public DateTime FechaCreacion {get; set;}
         public DateTime FechaModificacion {get; set;}
-        
+        public ICollection<ModuloNotificaciones> ModuloNotificaciones {get; set;}
     }
 }
