@@ -12,7 +12,7 @@ namespace Core.entities
         public PermisosGenericos permisosGenericos {get; set;}
 
         public int IdSubmodulo { get; set; }
-        public SubModulos SubModulos {get; set;}
+        public  MaestrovsSubmodulos MaestrovsSubmodulos {get; set;}
 
         public int IdRol { get; set; }
         public Rol Rol {get; set;}

@@ -14,6 +14,10 @@ namespace Core.entities
 
         public HiloRespuestaNotificacion ? HiloRespuestaNotificacion{get; set;}
 
+        public int IdAuditoria { get; set; }
+
+        public Auditoria  ? Auditoria {get; set;} 
+
         public int HasGenerado { get; set; }
         public DateTime FechaCreacion {get; set;}
         public DateTime FechaModificacion {get; set;}

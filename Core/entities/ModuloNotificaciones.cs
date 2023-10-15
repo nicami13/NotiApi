@@ -16,7 +16,7 @@ namespace Core.entities
         public Radicados? Radicados { get; set; }
         public int IdHiloRepuesta { get; set; }
 
-        public int IdEstado { get; set; }
+        public int IdEstadoNotificacion { get; set; }
         public EstadoNotificacion? EstadoNotificacion { get; set; }
 
         public int IdRequerimiento { get; set; }
