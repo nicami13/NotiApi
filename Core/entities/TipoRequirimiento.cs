@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Core.entities
 {
-    public class TipoRequirimiento:BaseEntity
+    public class TipoRequerimiento:BaseEntity
     {
         
         public string ? Nombre {get; set;}

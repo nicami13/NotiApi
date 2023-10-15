@@ -4,9 +4,9 @@ using Core.entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data;
-public class AnimalsContext : DbContext
+public class NotiContext : DbContext
 {
-    public AnimalsContext(DbContextOptions options) : base(options){
+    public NotiContext(DbContextOptions options) : base(options){
     }
 
     public DbSet<Auditoria> Auditorias {get; set;}
@@ -33,7 +33,7 @@ public class AnimalsContext : DbContext
 
     public DbSet<TipoNotificacion> TipoNotificaciones {get; set;}
 
-    public DbSet<TipoRequirimiento> TipoRequirimientos {get; set;}
+    public DbSet<TipoRequerimiento> TipoRequirimientos {get; set;}
 
 
     

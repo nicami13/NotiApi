@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Persistencia.Data.Configuration
 {
-    public class TipoRequirimientoConfiguration : IEntityTypeConfiguration<TipoRequirimiento>
+    public class TipoRequirimientoConfiguration : IEntityTypeConfiguration<TipoRequerimiento>
     {
 
-        public void Configure(EntityTypeBuilder<TipoRequirimiento> builder)
+        public void Configure(EntityTypeBuilder<TipoRequerimiento> builder)
         {
             builder.ToTable("TipoRequerimiento");
 

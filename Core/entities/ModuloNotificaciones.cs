@@ -21,7 +21,7 @@ namespace Core.entities
 
         public int IdRequerimiento { get; set; }
 
-        public TipoRequirimiento? TipoRequirimiento { get; set; }
+        public TipoRequerimiento? TipoRequirimiento { get; set; }
 
         public int IdFormato { get; set; }
 
