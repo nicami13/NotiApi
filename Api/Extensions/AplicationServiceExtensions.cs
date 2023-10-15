@@ -2,18 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace Api.Extensions
-{
-    public class AplicationServiceExtensions
-    {
-        using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AspNetCoreRateLimit;
 using Core.Interfaces;
-using Infrastructure.UnitOfwork;
+using Infrastructure.UnitOfWork;
 
 namespace ApiAnimals.Extensions
 {
@@ -57,6 +48,4 @@ namespace ApiAnimals.Extensions
     }
 
 
-}
-    }
 }

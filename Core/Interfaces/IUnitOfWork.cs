@@ -24,6 +24,8 @@ namespace Core.Interfaces
         ITipoRequerimiento TipoRequerimientos {get;}
         ISubmodulos Submodulos {get;}
 
+        Task<int> SaveAsync();
+
 
 
     }

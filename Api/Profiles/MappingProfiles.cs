@@ -10,21 +10,22 @@ public class MappingProfiles : Profile
         CreateMap<Auditoria, AuditoriaDto>().ReverseMap();
         CreateMap<BlockChain, BlockChainDto>().ReverseMap();
         CreateMap<EstadoNotificacion, EstadoNotificacionDto>().ReverseMap();
-        CreateMap<Formato, FormatoDto>().ReverseMap();
+        CreateMap<Formatos, FormatoDto>().ReverseMap();
         CreateMap<GenericovsSubmodulos, GenericovsSubmodulosDto>().ReverseMap();
-        CreateMap<HiloRespuestaNotificacion, HiloRespuestaNotificacionDto>().ReverseMap();
+        CreateMap<HiloRespuestaNotificacion,HiloRespuestaNotificaionDto>().ReverseMap();
         CreateMap<MaestrovsSubmodulos, MaestroVsSubmodulosDto>().ReverseMap();
-        CreateMap<ModuloNotificaciones, ModuloNotificacionesDto>().ReverseMap()
-        CreateMap<ModuloMaestro, ModuloMaestroDto>().ReverseMap();
+        CreateMap<ModuloNotificaciones, ModuloNotificacionesDto>().ReverseMap();
+        CreateMap<ModuloMaestro, ModuloMaestro>().ReverseMap();
         CreateMap<PermisosGenericos, PermisosGenericosDto>().ReverseMap();
         CreateMap<Radicados, RadicadosDto>().ReverseMap();
         CreateMap<RolvsMaestro, RolvsMaestroDto>().ReverseMap();
         CreateMap<RolvsMaestro, RolvsMaestroDto>().ReverseMap();
-        CreateMap<Submodulos, SubmodulosDto>().ReverseMap();
-        CreateMap<TipoNotificacion, TipoNotificacionesDto>().ReverseMap();
+        CreateMap<SubModulos, SubmodulosDto>().ReverseMap();
+        CreateMap<TipoNotificacion, TipoNotficiaonesDto>().ReverseMap();
         CreateMap<TipoRequerimiento, TipoRequerimientoDto>().ReverseMap();
 
        
 
     }
 }
+

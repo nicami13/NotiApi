@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAplicationServices();
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 
-builder.Services.AddDbContext<AnimalsContext>(options =>
+builder.Services.AddDbContext<NotiContext>(options =>
 {
     string connectionString = builder.Configuration.GetConnectionString("MysqlConex");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
