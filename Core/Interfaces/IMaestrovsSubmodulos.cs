@@ -8,6 +8,5 @@ namespace Core.Interfaces
 {
     public interface IMaestrovsSubmodulos : IGenericRepository<MaestrovsSubmodulos>
     {
-        
     }
 }

@@ -19,10 +19,11 @@ namespace Core.Interfaces
         IpermisosGenericos PermisosGenericos {get;}
         IRadicados Radicados {get;}
         IRol Roles {get;}
-        IRolvsMaestro RolvsMaestro {get;}
+        IRolvsMaestro RolvsMaestro {get;}        
         ITipoNotificaciones TipoNotificaciones {get;}
         ITipoRequerimiento TipoRequerimientos {get;}
         ISubmodulos Submodulos {get;}
+
 
         Task<int> SaveAsync();
 

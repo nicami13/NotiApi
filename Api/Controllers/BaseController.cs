@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Controllers;
-
+namespace API.Controllers;
 [ApiController]
-[Route("Api/[controller]")]
-public class BaseController:ControllerBase
-    {
-        
-    }
+[Route("api/notiapp/[controller]")]
+public class BaseController : ControllerBase
+{
+
+}

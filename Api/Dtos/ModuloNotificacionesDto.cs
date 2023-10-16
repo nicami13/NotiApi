@@ -7,6 +7,7 @@ namespace Api.Dtos
 {
     public class ModuloNotificacionesDto
     {
+        public int Id { get; set; }
         public string? AsuntoNotificacion { get; set; }
         public int IdTipoNotificacion { get; set; }
         public int IdRadicado { get; set; }

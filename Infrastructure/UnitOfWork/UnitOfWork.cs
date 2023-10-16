@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
@@ -15,7 +15,7 @@ namespace Infrastructure.UnitOfWork
         private IFormatos _Formatos;
         private IGenericosvsSubmodulos _GenericosvsSubmodulos;
         private IHiloRepuestaNotificacion _HiloRepuestaNotificacion;
-        private IMaestrovsSubmodulos _MaestrovsSubmoudlos;
+        private IMaestrovsSubmodulos _MaestrovsSubmodulos;
         private IModulosMaestro _ModuloMaestro;
         private IModuloNotificaciones _ModuloNotificaciones;
         private IpermisosGenericos _PermisosGenericos;
@@ -89,17 +89,8 @@ namespace Infrastructure.UnitOfWork
         {
             get
             {
-                _MaestrovsSubmoudlos ??= new MaestrovsSubmodulosRepository(_context);
-                return _MaestrovsSubmoudlos;
-            }
-        }
-
-        public IModulosMaestro ModulosMaestro
-        {
-            get
-            {
-                _ModuloMaestro ??= new ModuloMaestroRepository(_context);
-                return _ModuloMaestro;
+                _MaestrovsSubmodulos ??= new MaestrovsSubmodulosRepository(_context);
+                return _MaestrovsSubmodulos;
             }
         }
 
@@ -107,7 +98,7 @@ namespace Infrastructure.UnitOfWork
         {
             get
             {
-                _ModuloNotificaciones = new ModuloNotificacionesRepository(_context);
+                _ModuloNotificaciones ??= new ModuloNotificacionesRepository(_context);
                 return _ModuloNotificaciones;
             }
         }
@@ -175,12 +166,23 @@ namespace Infrastructure.UnitOfWork
             }
         }
 
+        public IModulosMaestro ModulosMaestro
+        {
+            get
+            {
+                _ModuloMaestro ??= new ModuloMaestroRepository(_context);
+                return _ModuloMaestro;
+            }
+        }
+
         public void Dispose()
         {
-         _context.Dispose();
+            _context.Dispose();
         }
-        public Task<int> SaveAsync(){
-            return _context.SaveChangesAsync();
+
+        public async Task<int> SaveAsync()
+        {
+            return await _context.SaveChangesAsync();
         }
     }
 }

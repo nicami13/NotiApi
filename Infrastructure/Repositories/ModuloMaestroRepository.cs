@@ -6,8 +6,8 @@ using Core.entities;
 using Core.Interfaces;
 using Infrastructure.Data;
 
-namespace Infrastructure.Repositories
-{
+namespace Infrastructure.Repositories;
+
     public class ModuloMaestroRepository : GenericRepository<ModuloMaestro>, IModulosMaestro
     {
         private readonly NotiContext _context;
@@ -17,4 +17,3 @@ namespace Infrastructure.Repositories
             _context = context;
         }
     }
-}
