@@ -8,6 +8,6 @@ namespace Core.Interfaces
 {
     public interface IBlockChain : IGenericRepository<BlockChain>
     {
-        
+
     }
 }

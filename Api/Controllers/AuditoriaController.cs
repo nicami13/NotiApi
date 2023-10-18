@@ -60,7 +60,7 @@ namespace Api.Controllers
             return CreatedAtAction(nameof(Post),new {id = auditoriaDto.Id}, auditoriaDto);
         }
 
-        [HttpGet("{id}")]
+        [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -81,7 +81,7 @@ namespace Api.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Delete(int id){
+        public async Task<ActionResult> Delete(int id){
             var auditoria = await _UnitOfWork.Auditorias.GetByIdAsync(id);
             if(auditoria== null)
             {

@@ -13,7 +13,7 @@ namespace ApiAnimals.Extensions
         public static void ConfigureCors(this IServiceCollection services)=>
             services.AddCors(options =>{
                 options.AddPolicy(
-                    "corspolicy",
+                    "CorsPolicy",
                     builder =>
                     builder
                     .AllowAnyOrigin()
@@ -30,7 +30,7 @@ namespace ApiAnimals.Extensions
             options.EnableEndpointRateLimiting=true;
             options.StackBlockedRequests=false;
             options.HttpStatusCode=429;
-            options.RealIpHeader="X-Reañ-IP";
+            options.RealIpHeader="X-Real-IP";
             options.GeneralRules =new List<RateLimitRule>
             {
                 new RateLimitRule{

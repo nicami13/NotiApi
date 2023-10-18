@@ -16,6 +16,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAplicationServices();
+builder.Services.ConfigureCors();
+builder.Services.ConfigureRatelimiting();
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 
 builder.Services.AddDbContext<NotiContext>(options =>
